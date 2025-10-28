@@ -1,6 +1,16 @@
 #include <stdio.h>
 
-int main(int argc, char** argv) {
-    printf("Hello World!");
+int main() {
+    float numbers[10];
+    
+    for (int i = 0; i < 10; i++) {
+        scanf("%f", &numbers[i]);
+    }
+    
+    for (int i = 9; i >= 0; i--) {
+        printf("%g ", numbers[i]);
+    }
+    printf("\n");
+    
     return 0;
 }
