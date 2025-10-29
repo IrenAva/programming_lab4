@@ -18,6 +18,11 @@ int main(int argc, char *argv[]) {
     numbers[K] = X;
     
     for (int i = 0; i < 10; i++) {
+	if (i == 9)
+	{
+            printf("%g", numbers[i]);
+	    break;
+	}
         printf("%g ", numbers[i]);
     }
     printf("\n");
